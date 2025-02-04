@@ -1,0 +1,268 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+:root {
+  --Blue: #4f7df3;
+  --Pale-Blue: #c2d3ff;
+  --Light-Red: #ff5263;
+  --Gray: #969696;
+  --Very-Dark-Blue: #151f29;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 4vw, 3rem);
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.big {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-family: "Libre Franklin", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  line-height: 1;
+  font-family: "Libre Franklin", sans-serif;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 clamp(1.5rem, 2.5vw, 3rem);
+}
+main div#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 clamp(1.5rem, 2.5vw, 3rem);
+}
+main div#content img#logo {
+  margin: 4rem 0 2rem;
+}
+main div#content h1 {
+  text-align: center;
+  font-weight: lighter;
+}
+main div#content h1 span {
+  font-weight: 600;
+}
+main div#content h2 {
+  text-align: center;
+}
+main div#content div#contentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: clamp(1.5rem, 2.5vw, 4rem);
+}
+@media screen and (min-width: 768px) {
+  main div#content div#contentForm {
+    flex-direction: row;
+  }
+}
+main div#content div#contentForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 24rem;
+}
+main div#content div#contentForm form label {
+  width: 100%;
+}
+main div#content div#contentForm form label input {
+  display: flex;
+  border: 1px solid var(--Gray);
+  border-radius: 9999px;
+  padding: 1rem;
+  width: 100%;
+  letter-spacing: 0.025rem;
+}
+main div#content div#contentForm form button {
+  background-color: var(--Blue);
+  color: white;
+  padding: 1rem;
+  border-radius: 9999px;
+  border: none;
+  width: 100%;
+  letter-spacing: 0.025rem;
+}
+main div#content img#contentImage {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 2rem 0;
+}
+footer div#socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+footer div#socials a {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  box-shadow: hsla(0, 0%, 0%, 0.1) 0 0 0.5rem 0.025rem;
+}
+footer p {
+  font-size: 0.875rem;
+}/*# sourceMappingURL=styles.css.map */
