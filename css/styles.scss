@@ -143,12 +143,12 @@ table {
 
 //Headings
 h1 {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     font-family: 'Libre Franklin', sans-serif;
 }
 
 h2 {
-    font-size: clamp(1.25rem, 4vw, 3rem);
+    font-size: clamp(1.25rem, 4vw, 1.35rem);
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -168,6 +168,11 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     position: relative;
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 main {
@@ -182,11 +187,14 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1.5rem;
+        width: 100%;
+        max-width: 45rem;
+        gap: 1rem;
+        margin-top: clamp(1rem, 2.5vh, 1.5rem);
         padding: 0 clamp(1.5rem, 2.5vw, 3rem);
 
         img#logo {
-            margin: 4rem 0 2rem;
+            margin: 5rem 0 2rem;
         }
 
         h1 {
@@ -209,7 +217,7 @@ main {
             justify-content: center;
             gap: 0.5rem;
             width: 100%;
-            padding: clamp(1.5rem, 2.5vw, 4rem);
+            margin-top: 1rem;
 
             @media screen and (min-width: 768px) {
                 flex-direction: row;
@@ -231,9 +239,20 @@ main {
                         display: flex;
                         border: 1px solid var(--Gray);
                         border-radius: 9999px;
-                        padding: 1rem;
+                        padding: 1rem 1rem 1rem 1.5rem;
                         width: 100%;
                         letter-spacing: 0.025rem;
+                        transition: all 0.25s ease-in-out;
+
+                        &::placeholder {
+                            color: var(--Gray);
+                        }
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid var(--Blue);
+                            box-shadow: #4f7df340 0 0 0.5rem 0.025rem;
+                        }
                     }
                 }
 
@@ -245,6 +264,11 @@ main {
                     border: none;
                     width: 100%;
                     letter-spacing: 0.025rem;
+                    transition: all 0.25s ease-in-out;
+
+                    &:hover {
+                        background-color: var(--Very-Dark-Blue);
+                    }
                 }
             }
         }
@@ -261,6 +285,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: white;
+    gap: 1.5rem;
     padding: 2rem 0;
 
     div#socials {
@@ -280,5 +305,6 @@ footer {
 
     p {
         font-size: 0.875rem;
+        color: var(--Gray);
     }
 }
