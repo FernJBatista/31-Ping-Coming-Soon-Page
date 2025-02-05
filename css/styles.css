@@ -225,6 +225,13 @@ main div#content div#contentForm form {
   width: 100%;
   max-width: 24rem;
 }
+@media screen and (min-width: 768px) {
+  main div#content div#contentForm form {
+    flex-direction: row;
+    gap: 0.5rem;
+    max-width: 32rem;
+  }
+}
 main div#content div#contentForm form label {
   width: 100%;
 }
@@ -257,6 +264,13 @@ main div#content div#contentForm form button {
   width: 100%;
   letter-spacing: 0.025rem;
   transition: all 0.25s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  main div#content div#contentForm form button {
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 1rem 3rem;
+  }
 }
 main div#content div#contentForm form button:hover {
   background-color: var(--Very-Dark-Blue);

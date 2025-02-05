@@ -232,6 +232,12 @@ main {
                 width: 100%;
                 max-width: 24rem;
 
+                @media screen and (min-width: 768px) {
+                    flex-direction: row;
+                    gap: 0.5rem;
+                    max-width: 32rem;
+                }
+
                 label {
                     width: 100%;
 
@@ -265,6 +271,11 @@ main {
                     width: 100%;
                     letter-spacing: 0.025rem;
                     transition: all 0.25s ease-in-out;
+
+                    @media screen and (min-width: 768px) {
+                        max-width: max-content;
+                        padding: 1rem 3rem;
+                    }
 
                     &:hover {
                         background-color: var(--Very-Dark-Blue);
